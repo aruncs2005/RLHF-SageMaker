@@ -138,8 +138,8 @@ class DahoasSyntheticinstructgptjpairwiseDataset(PromptRawDataset):
     def get_chosen(self, sample):
         return " " + sample['chosen']
 
-    def get_rejected(self, sample):
-        return " " + sample['rejected']
+        def get_rejected(self, sample):
+            return " " + sample['rejected']
 
     def get_prompt_and_chosen(self, sample):
         return " Human: " + sample['prompt'] + " Assistant: " + sample['chosen']
